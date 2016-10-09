@@ -1,0 +1,155 @@
+html {
+  background-color: #AA63B1;
+  color: #1B1F1E;
+  font-family: "Muli", sans-serif;
+}
+
+#search-wrapper {
+  position: relative;
+  height: 600px;
+}
+
+.wiki-container {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -250px;
+}
+
+h1 {
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+#search-bar-container {
+  margin-bottom: 40px;
+}
+#search-bar-container form {
+  border: 3px solid #0F0610;
+}
+#search-bar-container form #search-bar {
+  width: 400px;
+  border: none;
+  background-color: #FFFCDC;
+  text-align: center;
+  border-right: 1px solid #1B1F1E;
+  color: #1B1F1E;
+  padding: 20px 0;
+}
+#search-bar-container form input:enabled {
+  outline: none;
+}
+
+#search-button-icon-container {
+  position: relative;
+  width: 92px;
+  height: 60px;
+  background-color: #AA63B1;
+  text-align: center;
+  color: #1B1F1E;
+  float: right;
+}
+#search-button-icon-container #circle {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #AA63B1;
+  border: 2px solid #1B1F1E;
+  border-radius: 25px;
+  top: 20%;
+  left: 30%;
+}
+#search-button-icon-container #handle {
+  position: absolute;
+  top: 54%;
+  left: 55%;
+  backgound-color: #000;
+  height: 12px;
+  width: 0;
+  border: 1px solid #1B1F1E;
+  transform: rotate(-45deg);
+}
+
+input::-webkit-input-placeholder {
+  color: #1B1F1E;
+}
+
+#random-button-container {
+  text-align: center;
+}
+#random-button-container input {
+  background-color: #AA63B1;
+  border: 3px solid #0F0610;
+  color: #1B1F1E;
+  padding: 10px 20px;
+}
+
+#random-submit {
+  text-transform: uppercase;
+  background-color: #AA63B1;
+  padding: 15px 20px;
+  border: 1px solid #1B1F1E;
+  color: #1B1F1E;
+}
+
+#random-submit:hover {
+  color: #0F0610;
+}
+
+.search-bar-transition {
+  height: 300px !important;
+  -webkit-transition: height 2.5s ease-in-out;
+  -moz-transition: height 2.5s ease-in-out;
+  -ms-transition: height 2.5s ease-in-out;
+  -o-transition: height 2.5s ease-in-out;
+  transition: height 2.5s ease-in-out;
+}
+
+.h1-transition {
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+.info {
+  opacity: 1;
+  width: 80%;
+  margin: 5px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  border-left: 5px solid #AA63B1;
+}
+
+.info:hover {
+  border-left: 5px solid black;
+}
+
+@media (max-width: 750px) {
+  #search-wrapper {
+    width: 100%;
+  }
+
+  .info {
+    width: 95%;
+  }
+
+  .wiki-container {
+    width: 400px;
+    margin-left: -200px;
+  }
+
+  #search-bar {
+    width: 300px !important;
+  }
+}
