@@ -1,0 +1,144 @@
+$main-color: #AA63B1
+$dark-color: #1B1F1E
+$accent-color: #0F0610
+$light-color: #FFFCDC
+
+html
+  background-color: $main-color
+  color: $dark-color
+  font-family: 'Muli', sans-serif
+  
+#search-wrapper
+  position: relative
+  height: 600px
+  
+.wiki-container
+  width: 500px
+  height: 200px
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-top: -200px
+  margin-left: -250px
+    
+h1
+  margin: 0 0 40px 0
+  text-align: center
+ 
+#search-bar-container
+  margin-bottom: 40px
+
+  
+  form
+    border: 3px solid $accent-color
+    
+    #search-bar
+      width: 400px
+      border: none
+      background-color: $light-color
+      text-align: center
+      border-right: 1px solid $dark-color
+      color: $dark-color
+      padding: 20px 0
+      
+    input:enabled
+      outline: none
+    
+#search-button-icon-container
+  position: relative
+  width: 92px
+  height: 60px
+  background-color: $main-color
+  text-align: center
+  color: $dark-color
+  float: right
+    
+  #circle
+    position: absolute
+    height: 20px
+    width: 20px
+    background-color: $main-color
+    border: 2px solid $dark-color
+    border-radius: 25px
+    top: 20%
+    left: 30%
+    
+  #handle
+    position: absolute
+    top: 54%
+    left: 55%
+    backgound-color: #000
+    height: 12px
+    width: 0
+    border: 1px solid $dark-color
+    transform: rotate(-45deg)
+
+input::-webkit-input-placeholder
+  color: $dark-color
+       
+#random-button-container
+  text-align: center
+  
+  input
+    background-color: $main-color
+    border: 3px solid $accent-color
+    color: $dark-color
+    padding: 10px 20px
+
+#random-submit
+  text-transform: uppercase
+  background-color: $main-color
+  padding: 15px 20px
+  border: 1px solid $dark-color
+  color: $dark-color
+  
+#random-submit:hover
+  color: $accent-color
+
+.search-bar-transition
+  height: 300px !important
+  -webkit-transition: height 2.5s ease-in-out
+  -moz-transition: height 2.5s ease-in-out
+  -ms-transition: height 2.5s ease-in-out
+  -o-transition: height 2.5s ease-in-out
+  transition: height 2.5s ease-in-out
+
+.h1-transition
+  opacity: 0
+  -webkit-transition: all 2s ease-in-out
+  -moz-transition: all 2s ease-in-out
+  -ms-transition: all 2s ease-in-out
+  -o-transition: all 2s ease-in-out
+  transition: all 2s ease-in-out
+
+a
+  text-decoration: none
+.info
+  opacity: 1
+  width: 80%
+  margin: 5px auto
+  padding: 20px
+  background-color: rgba(0, 0, 0, .1)
+  color: black
+  border-left: 5px solid $main-color
+    
+  
+.info:hover
+  border-left: 5px solid black
+  
+  
+.one-count, .two-count, .three-count, .four-count, .five-count, .six-count, .seven-count, .eight-count, .nine-count, .ten-count
+  
+@media (max-width: 750px)  
+  #search-wrapper
+    width: 100%
+    
+  .info
+    width: 95%
+    
+  .wiki-container
+    width: 400px
+    margin-left: -200px
+    
+  #search-bar
+    width: 300px !important
